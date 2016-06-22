@@ -1,0 +1,9 @@
+name: Drupack
+type: theme
+description: 'A theme using webpack for compiling styles and scripts, Drupack!'
+package: Wieni
+version: 1.0
+core: 8.x
+base theme: false
+libraries:
+  - drupack/global-styling

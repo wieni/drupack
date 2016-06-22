@@ -1,0 +1,7 @@
+global-styling:
+  version: 1.0
+  css:
+    base:
+      build/app.css: {}
+  js:
+    build/app.js: {}
