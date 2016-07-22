@@ -6,7 +6,7 @@ A drupal theme using Webpack bundling, scss, es6 and hot reloading!
 
 Clone the project in your `drupack` theme map and run `npm install`
 
-Local development run `npm run dev`
+Local development run `npm run dev`  
 Production build run `npm run build`
 
 ## Using hot reloading
