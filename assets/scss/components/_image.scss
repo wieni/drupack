@@ -1,0 +1,53 @@
+.image {
+    &__image {
+        position: relative;
+
+        img {
+            &.lightbox-image {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__fullscreen-button {
+        position: absolute;
+        top: 0; right: 0;
+
+        display: table-cell;
+        width: 40px; height: 40px;
+
+        text-indent: -9999px;
+
+        background-color: rgba(0, 0, 0, .25);
+        color: #ffffff;
+
+        cursor: pointer;
+
+        svg {
+            display: block;
+            width: 24px; height: auto;
+
+            margin: auto;
+
+            fill: currentColor;
+
+            backface-visibility: hidden;
+
+            transition: transform $basic-ease;
+            transform: translateZ(0);
+        }
+
+        &:hover,
+        &:focus {
+            outline: none;
+
+            svg {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__caption {
+        @extend %caption;
+    }
+}

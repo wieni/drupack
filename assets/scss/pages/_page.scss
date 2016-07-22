@@ -1,0 +1,48 @@
+/**
+ *  STANDARD PAGE TPL WITH POSSIBLE SIDEBAR
+ */
+
+.page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    margin: 0 auto;
+
+    &__content {
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-bottom: $padding-small;
+        }
+    }
+
+    &__sidebar {
+        display: none;
+        width: 100%;
+
+        padding: $padding-small;
+
+        background-color: #f5f5f5;
+    }
+
+    @media (min-width: $breakpoint-tablet-large) {
+        flex-wrap: nowrap;
+
+        &__content {
+            flex-grow: 1;
+            flex-shrink: 1;
+
+            width: 100%;
+        }
+
+        &__sidebar {
+            flex-grow: 0;
+            flex-shrink: 0;
+
+            width: 320px;
+        }
+    }
+}

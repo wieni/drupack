@@ -1,0 +1,15 @@
+.image-gallery {
+    column-width: 200px;
+    column-gap: 10px;
+
+    font-size: 0; // DISPLAY INLINE BLOCK MARGIN BOTTOM FIX
+
+    > * {
+        display: inline-block;
+        width: 100%; height: auto;
+
+        margin-bottom: 10px;
+
+        font-size: 1rem;
+    }
+}

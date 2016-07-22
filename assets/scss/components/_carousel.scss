@@ -1,0 +1,30 @@
+.image-carousel {
+    height: 400px;
+    overflow: hidden;
+
+    &__item {
+        margin: 0 10px;
+    }
+
+    .image {
+        position: relative;
+
+        &__image {
+            img {
+                display: block;
+                width: auto; height: 400px;
+            }
+        }
+
+        &__caption {
+            position: absolute;
+            left: 0; bottom: 0; right: 0;
+
+            padding: 0 1em .5em;
+
+            color: #ffffff;
+
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+/**
+ *  Font size system
+ */
+
+html {
+    font-size: (80% / 1.6); // 1rem = 8px
+
+    @media (min-width: $breakpoint-mobile-small) {
+        font-size: (90% / 1.6); // 1rem = 9px
+    }
+
+    @media (min-width: $breakpoint-tablet-large) {
+        font-size: (100% / 1.6); // 1rem = 10px
+    }
+
+    @media (min-width: $breakpoint-desktop-extra-large) {
+        font-size: (120% / 1.6); // 1rem = 12px
+    }
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+
+
+/**
+ *  Container
+ */
+
+.container {
+    padding: $padding-small;
+
+    overflow: hidden;
+
+    @media (min-width: $breakpoint-tablet-large) {
+        padding: $padding-medium;
+    }
+
+    @media (min-width: $breakpoint-desktop-small) {
+        padding: $padding-large;
+    }
+
+    @media (min-width: $breakpoint-desktop-large) {
+        padding: $padding-extra-large;
+    }
+}
+
+
+/**
+ *  Images
+ */
+
+img {
+    display: block;
+    width: 100%; height: auto;
+}

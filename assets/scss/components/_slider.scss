@@ -1,0 +1,29 @@
+.slider {
+    width: 100%;
+
+    .flickity-slider {
+        > * {
+            width: 200px;
+
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .flickity-prev-next-button {
+        transition: transform .3s ease, opacity .3s ease;
+
+        &[disabled] {
+            opacity: 0;
+
+            &.previous {
+                transform: translate(-100%, -50%);
+            }
+
+            &.next {
+                transform: translate(100%, -50%);
+            }
+        }
+    }
+}

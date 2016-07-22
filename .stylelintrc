@@ -43,8 +43,6 @@
         "function-linear-gradient-no-nonstandard-direction": true,
 
         "function-max-empty-lines": 0,
-        "function-name-case": "lower",
-
 
         "function-parentheses-space-inside": "never",
         "function-url-quotes": "always",
@@ -70,7 +68,6 @@
             ignore: ['#f5f5f5'],
         }],
         "no-missing-eof-newline": true,
-        "no-unknown-animations": true,
 
         "number-leading-zero": "never",
         "number-max-precision": 2,

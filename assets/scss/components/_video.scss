@@ -1,0 +1,12 @@
+.video {
+    &__video {
+        position: relative;
+
+        display: block;
+        width: 100%; height: auto;
+    }
+
+    &__caption {
+        @extend %caption;
+    }
+}

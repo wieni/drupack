@@ -1,3 +1,3 @@
-const EQ = require('node_modules/css-element-queries/src/ElementQueries.js');
-
-
+/**
+ *  Go ahead, write some es6 javascript
+ */

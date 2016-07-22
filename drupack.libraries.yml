@@ -2,6 +2,6 @@ global-styling:
   version: 1.0
   css:
     base:
-      build/app.css: {}
+      dist/styles.css: {}
   js:
-    build/app.js: {}
+    dist/global.js: {}

@@ -1,0 +1,46 @@
+.social-icons {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    .social-icon {
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+}
+
+.social-icon {
+    display: block;
+    width: 2rem;
+
+    cursor: pointer;
+
+    transition: color $basic-ease;
+
+    &:hover,
+    &:focus {
+        color: currentColor;
+
+        animation: pop $basic-ease;
+    }
+
+    svg {
+        display: block;
+        width: 100%; height: auto;
+
+        fill: currentColor;
+    }
+
+    @each $brand, $color in $brand-colors {
+        &--#{$brand} {
+            color: getBrandColor($brand, "base");
+
+            &:hover,
+            &:focus {
+                color: getBrandColor($brand, "hover");
+            }
+        }
+    }
+}

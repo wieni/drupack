@@ -1,4 +1,50 @@
-body {
-    background-color: #f5f5f5;
-    color: #ff9900;
-}
+/**
+ *  Base
+ */
+
+@import "base/variables";
+@import "base/sanitize";
+@import "base/base";
+@import "base/typography";
+@import "base/colors";
+
+
+/**
+ *  Vendor
+ */
+
+
+/**
+ *  Components
+ */
+
+@import "components/paragraphs";
+@import "components/button";
+@import "components/text";
+@import "components/image";
+@import "components/carousel";
+@import "components/faq";
+@import "components/gallery";
+@import "components/highlight";
+@import "components/image";
+@import "components/iframe";
+@import "components/quote";
+@import "components/slider";
+@import "components/social";
+@import "components/video";
+@import "components/social-icons";
+
+
+/**
+ *  Layout
+ */
+
+@import "layout/header";
+@import "layout/footer";
+
+
+/**
+ *  Pages
+ */
+
+@import "pages/page";
