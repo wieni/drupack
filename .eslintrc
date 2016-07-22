@@ -1,7 +1,11 @@
 {
-    parser: 'babel-eslint',
-    extends: 'airbnb',
-    rules: {
-        indent: ['error', 4],
+    'parser': 'babel-eslint',
+    'extends': 'airbnb',
+    'rules': {
+        'indent': ['error', 4],
+        'jsx-quotes': [2, 'prefer-single'],
+        'jsx-indent-props': [2, 4],
+        'jsx-key': 2,
+        'react/no-direct-mutation-state': 2
     }
 }
