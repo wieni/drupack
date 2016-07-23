@@ -23,7 +23,11 @@ export default {
         loaders: [
             {
                 test: /\.js$/,
-                loader: 'babel-loader'
+                loaders: [
+                    'react-hot',
+                    'babel-loader',
+                ],
+                include: path.resolve(__dirname, '../assets')
             },
             {
                 test: /\.scss$/,
