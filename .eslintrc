@@ -4,8 +4,9 @@
     'rules': {
         'indent': ['error', 4],
         'jsx-quotes': [2, 'prefer-single'],
-        'jsx-indent-props': [2, 4],
-        'jsx-key': 2,
+        'react/jsx-indent-props': [2, 4],
+        'react/jsx-indent': [2, 4],
+        'react/jsx-key': 2,
         'react/no-direct-mutation-state': 2
     }
 }
