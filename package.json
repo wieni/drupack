@@ -11,6 +11,7 @@
   "author": "Kobe Aerts",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^6.3.7",
     "babel-core": "^6.7.4",
     "babel-eslint": "^6.1.2",
     "babel-loader": "^6.2.4",

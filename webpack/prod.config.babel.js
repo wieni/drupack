@@ -3,6 +3,7 @@ import path from 'path';
 import entrypoints from './entrypoints.babel.js';
 
 import rucksack from 'rucksack-css';
+import autoprefixer from 'autoprefixer';
 
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
@@ -36,9 +37,12 @@ module.exports = {
         ]
     },
     postcss() {
-        return [rucksack({
-            autoprefixer: true,
-        })];
+        return [
+            rucksack({ fallbacks: true }),
+            autoprefixer({
+                browsers: ['> 0.5% in BE', 'last 10 versions', 'Firefox ESR', 'not ie <= 10']
+            }),
+        ];
     },
     resolve: {
         root: [
