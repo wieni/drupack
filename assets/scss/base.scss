@@ -18,6 +18,9 @@
  *  Components
  */
 
+@import "components/base/tables";
+@import "components/base/forms";
+
 @import "components/paragraphs";
 @import "components/button";
 @import "components/text";
@@ -41,7 +44,6 @@
 
 @import "layout/header";
 @import "layout/footer";
-@import "layout/tables";
 
 
 /**
