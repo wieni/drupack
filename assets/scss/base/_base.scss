@@ -3,11 +3,7 @@
  */
 
 html {
-    font-size: (80% / 1.6); // 1rem = 8px
-
-    @media (min-width: $breakpoint-mobile-small) {
-        font-size: (90% / 1.6); // 1rem = 9px
-    }
+    font-size: (90% / 1.6); // 1rem = 9px
 
     @media (min-width: $breakpoint-tablet-large) {
         font-size: (100% / 1.6); // 1rem = 10px
