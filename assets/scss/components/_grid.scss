@@ -1,0 +1,53 @@
+.grid {
+    display: block;
+    width: 100%;
+}
+
+.grid-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 100%;
+}
+
+.grid-element {
+    display: block;
+    width: 100%;
+
+    &--flexible {
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    @media (min-width: $breakpoint-tablet-small) {
+        &--small,
+        &--medium {
+            width: 50%;
+        }
+    }
+
+    @media (min-width: $breakpoint-desktop-small) {
+        &--small {
+            width: calc(100% / 3);
+        }
+
+        &--medium {
+            width: calc(100% / 3 * 2);
+        }
+    }
+
+    @media (min-width: $breakpoint-desktop-medium) {
+        &--small {
+            width: calc(100% / 4);
+        }
+
+        &--medium {
+            width: calc(100% / 4 * 2);
+        }
+
+        &--large {
+            width: calc(100% / 4 * 3);
+        }
+    }
+}
