@@ -1,13 +1,5 @@
 .image {
-    &__image {
-        position: relative;
-
-        img {
-            &.lightbox-image {
-                cursor: pointer;
-            }
-        }
-    }
+    position: relative;
 
     &__fullscreen-button {
         position: absolute;
