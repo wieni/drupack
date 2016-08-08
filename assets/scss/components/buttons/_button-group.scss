@@ -1,0 +1,7 @@
+.button-group {
+    > * {
+        &:not(:last-child) {
+            margin-right: $padding-small / 2;
+        }
+    }
+}

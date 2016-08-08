@@ -36,11 +36,3 @@
         }
     }
 }
-
-.button-group {
-    .button {
-        &:not(:last-child) {
-            margin-right: $padding-small / 2;
-        }
-    }
-}
