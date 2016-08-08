@@ -1,3 +1,5 @@
+$_gutter: 20px;
+
 .grid {
     display: block;
     width: 100%;
@@ -8,12 +10,18 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-    width: 100%;
+    padding: $padding-large calc(#{$padding-large} - #{$_gutter}) calc(#{$padding-large} - #{$_gutter}) $padding-large;
 }
 
 .grid-element {
     display: block;
-    width: 100%;
+    width: calc(100% - #{$_gutter});
+
+    margin: 0 $_gutter $_gutter 0;
+
+    > * {
+        height: 100%;
+    }
 
     &--flexible {
         flex-grow: 1;
@@ -23,31 +31,31 @@
     @media (min-width: $breakpoint-tablet-small) {
         &--small,
         &--medium {
-            width: 50%;
+            width: calc(100% / 2 - #{$_gutter});
         }
     }
 
     @media (min-width: $breakpoint-desktop-small) {
         &--small {
-            width: calc(100% / 3);
+            width: calc(100% / 3 - #{$_gutter});
         }
 
         &--medium {
-            width: calc(100% / 3 * 2);
+            width: calc(100% / 3 * 2 - #{$_gutter});
         }
     }
 
     @media (min-width: $breakpoint-desktop-medium) {
         &--small {
-            width: calc(100% / 4);
+            width: calc(100% / 4 - #{$_gutter});
         }
 
         &--medium {
-            width: calc(100% / 4 * 2);
+            width: calc(100% / 4 * 2 - #{$_gutter});
         }
 
         &--large {
-            width: calc(100% / 4 * 3);
+            width: calc(100% / 4 * 3 - #{$_gutter});
         }
     }
 }
