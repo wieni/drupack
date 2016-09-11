@@ -3,6 +3,7 @@
  */
 
 @import "base/variables";
+@import "base/animations";
 @import "base/sanitize";
 @import "base/base";
 @import "base/typography";
@@ -28,9 +29,7 @@
 @import "components/paragraphs";
 @import "components/text";
 @import "components/image";
-@import "components/carousel";
 @import "components/faq";
-@import "components/highlight";
 @import "components/image";
 @import "components/iframe";
 @import "components/quote";
@@ -43,13 +42,8 @@
  */
 
 @import "layout/container";
-@import "layout/grid";
-@import "layout/header";
-@import "layout/footer";
 
 
 /**
  *  Pages
  */
-
-@import "pages/page";

@@ -27,34 +27,7 @@
     &--large {
         max-width: none;
     }
-
-    &--focus {
-        position: relative;
-
-        padding-top: $paragraph-margin-bottom;
-        padding-bottom: $paragraph-margin-bottom;
-
-        &::before {
-            content: "";
-
-            position: absolute;
-            left: -9999px; top: 0; right: -9999px; bottom: 0;
-
-            z-index: -1;
-
-            background-color: #f5f5f5;
-        }
-
-        & + & {
-            margin-top: -(2 * $paragraph-margin-bottom);
-        }
-    }
 }
-
-
-/**
- *  PARAGRAPH GROUP
- */
 
 .paragraph-group {
     width: 100%;
@@ -82,7 +55,7 @@
     }
 
     &[min-width~="640px"] {
-        &.paragraph-group--pull-left {
+        &.pull-left {
             > * {
                 &:nth-child(1) {
                     float: left;
@@ -94,7 +67,7 @@
             }
         }
 
-        &.paragraph-group--pull-right {
+        &.pull-right {
             > * {
                 &:nth-child(1) {
                     float: right;

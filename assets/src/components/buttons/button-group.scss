@@ -1,0 +1,12 @@
+.button-group {
+    &__inner {
+        display: inline-block;
+        margin: 0 -10px -10px 0;
+
+        > * {
+            display: inline-block;
+
+            margin: 0 10px 10px 0;
+        }
+    }
+}

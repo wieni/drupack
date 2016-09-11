@@ -23,16 +23,4 @@
     &:focus {
         background-color: shade($background-color--darker, 10%);
     }
-
-    @each $theme, $color in $theme-colors {
-        &--#{$theme} {
-            background-color: tint(getThemeColor($theme, "background"), 15%);
-            color: getThemeColor($theme, "color");
-
-            &:hover,
-            &:focus {
-                background-color: getThemeColor($theme, "background");
-            }
-        }
-    }
 }

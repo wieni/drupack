@@ -1,2 +1,5 @@
-import 'js/app.js';
-import 'scss/base.scss';
+import 'app.scss';
+import 'app.js';
+
+import 'components/image.js';
+import 'components/faq.js';

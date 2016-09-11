@@ -36,11 +36,6 @@
     @each $brand, $color in $brand-colors {
         &--#{$brand} {
             color: getBrandColor($brand, "base");
-
-            &:hover,
-            &:focus {
-                color: getBrandColor($brand, "hover");
-            }
         }
     }
 }

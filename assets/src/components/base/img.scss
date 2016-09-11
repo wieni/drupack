@@ -1,6 +1,12 @@
 img {
     display: block;
     width: 100%; height: auto;
+
+    &.is-loaded {
+        display: block !important;
+
+        animation: fadeIn $basic-ease;
+    }
 }
 
 .img--rounded {

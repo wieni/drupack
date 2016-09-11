@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    max-width: $page-max-width;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    @each $breakpoint, $padding in $breakpoints {
+        @media (min-width: $breakpoint) {
+            &.is-vertical {
+                padding-top: $padding;
+                padding-bottom: $padding;
+            }
+
+            &.is-horizontal {
+                padding-left: $padding;
+                padding-right: $padding;
+
+                .breakout-container {
+                    width: calc(100% + 2 * #{$padding});
+                    margin-left: -1 * $padding;
+                }
+            }
+        }
+    }
+}

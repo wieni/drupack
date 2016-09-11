@@ -1,1 +1,2 @@
-assets/scss/base/_sanitize.scss
+assets/src/base/sanitize.scss
+assets/src/base/animations.scss

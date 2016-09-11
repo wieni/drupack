@@ -4,13 +4,13 @@
     font-family: "Lato";
 }
 
-%font-base--bold {
-    font-family: "Lato";
-    font-weight: 700;
-}
-
 %font-complementary {
     font-family: "Lato";
+}
+
+%font-complementary--bold {
+    font-family: "Lato";
+    font-weight: 700;
 }
 
 
@@ -28,7 +28,7 @@ body {
  */
 
 h1, h2, h3, h4, h5 {
-    @extend %font-base--bold;
+    @extend %font-complementary--bold;
 
     font-size: 3rem;
     line-height: 1.2;
@@ -88,7 +88,8 @@ a {
 }
 
 a.link,
-p a {
+p a,
+.text a {
     position: relative;
 
     text-decoration: none;
