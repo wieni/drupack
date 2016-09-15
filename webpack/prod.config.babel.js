@@ -6,6 +6,7 @@ import rucksack from 'rucksack-css';
 import autoprefixer from 'autoprefixer';
 
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
+import { DefinePlugin } from 'webpack';
 
 module.exports = {
     entry: entrypoints,
@@ -15,7 +16,13 @@ module.exports = {
         filename: '[name].js'
     },
     plugins: [
-        new ExtractTextPlugin('styles.css')
+        new ExtractTextPlugin('[name].css'),
+        new DefinePlugin({
+            'process.env': {
+                NODE_ENV: JSON.stringify('production'),
+                APP_ENV: JSON.stringify('production'),
+            },
+        }),
     ],
     module: {
         loaders: [
@@ -46,7 +53,8 @@ module.exports = {
     },
     resolve: {
         root: [
-            path.resolve(__dirname, '../assets/')
+            path.resolve(__dirname, '../assets/'),
+            path.resolve(__dirname, '../assets/src/'),
         ],
     }
 };
