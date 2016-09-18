@@ -59,7 +59,7 @@
         "media-feature-no-missing-punctuation": true,
         "media-feature-range-operator-space-after": "always",
         "media-feature-range-operator-space-before": "always",
-        "media-query-parentheses-space-inside": "never",
+        "media-feature-parentheses-space-inside": "never",
 
         "no-duplicate-selectors": true,
         "no-eol-whitespace": true,
@@ -67,7 +67,7 @@
         "no-indistinguishable-colors": [true, {
             ignore: ['#f5f5f5'],
         }],
-        "no-missing-eof-newline": true,
+        "no-missing-end-of-source-newline": true,
 
         "number-leading-zero": "never",
         "number-max-precision": 2,

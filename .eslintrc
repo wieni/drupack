@@ -1,12 +1,19 @@
 {
+    'env': {
+        'browser': true,
+        'node': true
+    },
     'parser': 'babel-eslint',
     'extends': 'airbnb',
     'rules': {
         'indent': ['error', 4, {'SwitchCase': 1}],
+        'no-plusplus': ['error', { 'allowForLoopAfterthoughts': true }],
         'jsx-quotes': [2, 'prefer-single'],
         'react/jsx-indent-props': [2, 4],
         'react/jsx-indent': [2, 4],
         'react/jsx-key': 2,
-        'react/no-direct-mutation-state': 2
+        'react/no-direct-mutation-state': 2,
+        'react/jsx-filename-extension': [1, { "extensions": [".js", ".jsx"] }],
+        'react/forbid-prop-types': 0,
     }
 }

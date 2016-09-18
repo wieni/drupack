@@ -4,16 +4,14 @@
 
     margin: 0 auto;
 
-    overflow: hidden;
-
     @each $breakpoint, $padding in $breakpoints {
         @media (min-width: $breakpoint) {
-            &.is-vertical {
+            &--vertical {
                 padding-top: $padding;
                 padding-bottom: $padding;
             }
 
-            &.is-horizontal {
+            &--horizontal {
                 padding-left: $padding;
                 padding-right: $padding;
 
