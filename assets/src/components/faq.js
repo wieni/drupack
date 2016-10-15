@@ -1,4 +1,4 @@
-import { toggleClass } from '../helpers.js';
+import { toggleClass } from '../helpers';
 
 window.addEventListener('load', () => {
     const $faqItems = document.querySelectorAll('.js-faq');
