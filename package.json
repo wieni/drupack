@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "npm run clean && webpack --progress --colors --config ./webpack/dev.config.babel.js && webpack-dev-server --hot --inline --config ./webpack/dev.config.babel.js",
     "build": "npm run clean && webpack --progress -p --config ./webpack/prod.config.babel.js",
-    "clean": "rimraf ./dist"
+    "clean": "rimraf ./public/assets"
   },
   "author": "Kobe Aerts",
   "license": "ISC",

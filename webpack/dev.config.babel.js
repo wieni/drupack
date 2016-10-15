@@ -11,8 +11,8 @@ import StyleLintPlugin from 'stylelint-webpack-plugin';
 export default {
     entry: entrypoints,
     output: {
-        path: 'dist/',
-        publicPath: '/themes/custom/drupack/dist/',
+        path: 'public/assets/',
+        publicPath: '/themes/custom/drupack/public/assets/',
         filename: '[name].js'
     },
     plugins: [
@@ -23,7 +23,7 @@ export default {
     module: {
         loaders: [
             {
-                test: /\.js$/,
+                test: /\.jsx?$/,
                 loaders: [
                     'react-hot',
                     'babel-loader',
@@ -49,7 +49,7 @@ export default {
         ],
         preLoaders: [
             {
-                test: /\.js$/,
+                test: /\.jsx?$/,
                 loaders: ['eslint']
             }
         ]
@@ -74,8 +74,9 @@ export default {
         proxy: {
             '*': {
                 target: 'http://192.168.33.3',
-                rewrite: function(req) {
-                    req.headers.host = 'SITENAME.drupal-8.local.wieni.site';
+                changeOrigin: true,
+                onProxyReq: function(proxyReq, req, res) {
+                    proxyReq.setHeader('host', 'SITENAME.drupal-8.local.wieni.site');
                 }
             }
         }

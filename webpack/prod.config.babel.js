@@ -11,8 +11,8 @@ import { DefinePlugin } from 'webpack';
 module.exports = {
     entry: entrypoints,
     output: {
-        path: 'dist',
-        publicPath: '/dist/',
+        path: 'public/assets/',
+        publicPath: '/themes/custom/drupack/public/assets',
         filename: '[name].js'
     },
     plugins: [
@@ -27,7 +27,7 @@ module.exports = {
     module: {
         loaders: [
             {
-                test: /\.js$/,
+                test: /\.jsx?$/,
                 loader: 'babel-loader'
             },
             {

@@ -2,6 +2,6 @@ global-styling:
   version: 1.0
   css:
     base:
-      dist/styles.css: {}
+      public/assets/global.css: {}
   js:
-    dist/global.js: {}
+    public/assets/global.js: {}
