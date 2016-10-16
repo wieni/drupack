@@ -1,0 +1,88 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+
+	cursor: default;
+
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+img {
+	border-style: none;
+}
+
+svg {
+	fill: currentColor;
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+a:hover {
+	outline-width: 0;
+}
+
+button,
+input,
+select,
+textarea {
+	margin: 0;
+
+	border-style: none;
+	color: inherit;
+
+    font-size: 1em;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+
+::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+textarea {
+	overflow: auto; /* 1 */
+	resize: vertical; /* 2 */
+}
+
+[type="checkbox"],
+[type="radio"] {
+	padding: 0;
+}
+
+a,
+area,
+button,
+input,
+label,
+select,
+textarea,
+[tabindex] {
+	-ms-touch-action: manipulation; /* 1 */
+	touch-action: manipulation;
+}
