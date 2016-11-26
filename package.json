@@ -5,7 +5,7 @@
   "main": "./webpack/dev.config.babel.js",
   "scripts": {
     "dev": "yarn run clean && webpack --progress --colors --config ./webpack/dev.config.babel.js && webpack-dev-server --hot --inline --config ./webpack/dev.config.babel.js",
-    "build": "yarn run clean && webpack --progress -p --config ./webpack/prod.config.babel.js",
+    "build": "webpack --progress -p --config ./webpack/prod.config.babel.js",
     "clean": "rimraf ./public/assets"
   },
   "author": "Kobe Aerts",
