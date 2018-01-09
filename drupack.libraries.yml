@@ -5,3 +5,15 @@ global-styling:
       public/assets/global.css: {}
   js:
     public/assets/global.js: {}
+# dependencies:
+#   - drupack/fonts.google.roboto
+
+# fonts.google.roboto:
+#   css:
+#     base:
+#       https://fonts.googleapis.com/css?family=Roboto: { external: true }
+      
+# fonts.typekit.example
+#   css:
+#     base:
+#       https://use.typekit.net/gbv2ijq.css: { external: true }
