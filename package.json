@@ -2,11 +2,10 @@
   "name": "not-webpack",
   "version": "1.0.0",
   "description": "",
-  "main": "./webpack/dev.config.babel.js",
+  "main": "./config/dev.config.babel.js",
   "scripts": {
-    "dev": "yarn run clean && webpack --progress --colors --config ./webpack/dev.config.babel.js && webpack-dev-server --hot --inline --config ./webpack/dev.config.babel.js",
-    "build": "webpack --progress -p --config ./webpack/prod.config.babel.js",
-    "clean": "rimraf ./public/assets"
+    "dev": "NODE_ENV=development webpack-dev-server --config ./config/dev.babel.js",
+    "build": "NODE_ENV=production webpack -p --config ./config/prod.babel.js"
   },
   "author": "Wieni",
   "license": "ISC",
@@ -39,6 +38,7 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "huntjs": "^4.1.0",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
