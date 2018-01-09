@@ -16,7 +16,7 @@ libraries-override:
     core/html5shiv: false
 
 regions:
-  # This is the default region where all blocks/content is rendered.
+  # This is the default region where all blocks/content are rendered.
   content: Content
   # Place messages and/or admin tabs here.
   admin_tools: 'Admin tools'
