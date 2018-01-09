@@ -6,12 +6,23 @@ version: 1.0
 core: 8.x
 base theme: false
 
+# Add more libraries in drupack.libraries.yml. The libraries added here are included ON ALL PAGES.
 libraries:
-  # Add more libraries in drupack.libraries.yml. The libraries added here are included ON ALL PAGES.
   - drupack/global-styling
+
+# Remove some of the default Drupal libraries, that include some style we don't need.
+libraries-override:
+    system/base: false
+    core/html5shiv: false
 
 regions:
   # This is the default region where all blocks/content is rendered.
   content: Content
   # Place messages and/or admin tabs here.
   admin_tools: 'Admin tools'
+
+component-libraries:
+  components:
+    - resources/components
+  icons:
+    - resources/icons
