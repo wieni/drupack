@@ -8,7 +8,7 @@ base theme: false
 
 # Add more libraries in drupack.libraries.yml. The libraries added here are included ON ALL PAGES.
 libraries:
-  - drupack/global-styling
+    - drupack/global-styling
 
 # Remove some of the default Drupal libraries, that include some style we don't need.
 libraries-override:
@@ -16,14 +16,20 @@ libraries-override:
     core/html5shiv: false
 
 regions:
-  # This is the default region where all blocks/content are rendered.
-  content: Content
-  # Place messages and/or admin tabs here.
-  admin_tools: 'Admin tools'
+    # This is the default region where all blocks/content are rendered.
+    content: Content
+    # Place messages and/or admin tabs here.
+    admin_tools: 'Admin tools'
 
 # Makes it possible to include components using {% include "@component-library-name/component/card.html.twig %}
 component-libraries:
-  components:
-    - resources/components
-  icons:
-    - resources/icons
+    drupack:
+        - templates
+    content-blocks:
+        - templates/content-blocks
+    components:
+        - resources/components
+    images:
+        - resources/images
+    layout:
+        - resources/layout

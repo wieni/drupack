@@ -1,0 +1,24 @@
+{
+  "namespaces": [
+    {
+      "namespace": "drupack",
+      "path": "templates"
+    },
+    {
+      "namespace": "content-blocks",
+      "path": "templates/content-blocks"
+    },
+    {
+      "namespace": "components",
+      "path": "resources/components"
+    },
+    {
+      "namespace": "images",
+      "path": "resources/images"
+    },
+    {
+      "namespace": "layout",
+      "path": "resources/layout"
+    }
+  ]
+}
