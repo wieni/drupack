@@ -2,19 +2,6 @@ global-styling:
   version: VERSION
   css:
     base:
-      # Using `preprocess: false` will make sure these files are not aggregated by the default Drupal aggregation system.
       public/assets/global.css: { preprocess: false }
   js:
     public/assets/global.js: { preprocess: false }
-# dependencies:
-#   - drupack/fonts.google.roboto
-
-# fonts.google.roboto:
-#   css:
-#     base:
-#       https://fonts.googleapis.com/css?family=Roboto: { external: true }
-      
-# fonts.typekit.example
-#   css:
-#     base:
-#       https://use.typekit.net/gbv2ijq.css: { external: true }
