@@ -4,7 +4,7 @@ description: "A theme using webpack for compiling styles and scripts, Drupack!"
 package: Wieni
 version: 3.0
 core: 8.x
-base theme: false
+base theme: base
 
 # Add more libraries in drupack.libraries.yml. The libraries added here are included ON ALL PAGES.
 libraries:
