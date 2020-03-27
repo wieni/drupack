@@ -20,4 +20,12 @@ regions:
   content: Content
   # Place messages and/or admin tabs here.
   admin_tools: "Admin tools"
+
 # Makes it possible to include components using {% include "@component-library-name/component/card.html.twig %}
+component-libraries:
+  drupack:
+    - templates
+  content-blocks:
+    - templates/content-blocks
+  components:
+    - resources/components
