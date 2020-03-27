@@ -1,0 +1,7 @@
+{# @var block \Drupal\wmcustom\Entity\Model\ContentBlock\Video #}
+
+{% if block.getLink() %}
+    <div class="video">
+    {{ embedVideo(block.getLink()) }}
+    </div>
+{% endif %}

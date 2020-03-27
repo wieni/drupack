@@ -1,0 +1,6 @@
+{# @var block \Drupal\wmcustom\Entity\Model\ContentBlock\Image #}
+
+<figure>
+    <img src="{{ block.image|imgix('1080p') }}" alt="{{ block.image.alternate }}" />
+    <figcaption>{{ block.image.description }}</figcaption>
+</figure>

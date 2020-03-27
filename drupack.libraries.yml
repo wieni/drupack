@@ -2,6 +2,6 @@ global-styling:
   version: VERSION
   css:
     base:
-      public/assets/global.css: { preprocess: false }
+      public/resources/global.css: { preprocess: false }
   js:
-    public/assets/global.js: { preprocess: false }
+    public/resources/global.js: { preprocess: false }

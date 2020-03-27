@@ -1,0 +1,16 @@
+{# @var block \Drupal\wmcustom\Entity\Model\ContentBlock\Quote #}
+
+<div class="block">
+    <blockquote class="quote">
+        <div class="quote__content">
+            <p class="quote__text">
+                {{ block.text | raw }}
+            </p>
+            {% if block.source %}
+                <div class="quote__source">{{ block.source }}</div>
+            {% else %}
+                <div class="quote__artefact"></div>
+            {% endif %}
+        </div>
+    </blockquote>
+</div>
