@@ -5,7 +5,10 @@
   "main": "index.js",
   "author": "Wieni",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build": "cd ../base && npm run build",
+    "start": "cd ../base && npm run start"
+  },
   "devDependencies": {},
   "dependencies": {
     "@popperjs/core": "^2.1.1",
