@@ -8,7 +8,7 @@ base theme: bunny
 
 # Add more libraries in drupack.libraries.yml. The libraries added here are included ON ALL PAGES.
 libraries:
-  - drupack/global-styling
+  - drupack/global
 
 # Remove some of the default Drupal libraries, that include some style we don't need.
 libraries-override:

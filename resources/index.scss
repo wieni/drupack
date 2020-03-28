@@ -1,18 +1,4 @@
-@import "config/config";
-@import "base/base";
-@import "components/components";
-@import "layout/layout";
-
-base {
-  color: eline;
-}
-
-.insert {
-  display: block
-}
-
-.alter:after {color: red; content: 'example'}
-
-.delete {
-  display: block;;
+body {
+  background-color: red;
+  color: white;
 }

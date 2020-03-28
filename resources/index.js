@@ -1,3 +1,6 @@
-import "./index.scss";
+import React from "react";
+import { render } from "react-dom";
 
-console.log('hello');
+const App = () => <div>Hello world</div>;
+
+render(<App />, document.getElementById("app"));
