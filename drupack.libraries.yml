@@ -1,5 +1,8 @@
 global:
   version: VERSION
+  css:
+    base:
+      public/resources/global.css: { preprocess: false }
   js:
     public/resources/global.js: { preprocess: false }
   dependencies:
