@@ -6,8 +6,8 @@
   "author": "Wieni",
   "license": "MIT",
   "scripts": {
-    "build": "cd ../base && npm run build",
-    "start": "cd ../base && npm run start"
+    "build": "npm run build --prefix ../magic",
+    "start": "npm run start --prefix ../magic"
   },
   "devDependencies": {},
   "dependencies": {
