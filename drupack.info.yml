@@ -4,7 +4,7 @@ description: 'A theme using webpack for compiling styles and scripts, Drupack!'
 package: Wieni
 version: 1.0
 core: 8.x
-base theme: false
+base theme: bunny
 
 # Add more libraries in drupack.libraries.yml. The libraries added here are included ON ALL PAGES.
 libraries:
@@ -20,3 +20,16 @@ regions:
     content: Content
     # Place messages and/or admin tabs here.
     admin_tools: 'Admin tools'
+
+# Makes it possible to include components using {% include "@component-library-name/component/card.html.twig %}
+# TODO: Check if these are inherited from the base theme
+component-libraries:
+    drupack:
+        paths:
+            - templates
+    content-blocks:
+        paths:
+            - templates/content-blocks
+    components:
+        paths:
+            - resources/components

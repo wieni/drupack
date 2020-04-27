@@ -9,15 +9,14 @@ endif
 
 all: $(ALL_TARGETS)
 
-public/resources: package.json yarn.lock $(assets)
+public/resources: package.json package-lock.json $(assets)
 	$(MAKE) node_modules
 	npm run build
 	@rm -rf node_modules
 	touch public/resources
 
-node_modules: package.json yarn.lock
-	yarn --pure-lockfile
-	npm rebuild node-sass
+node_modules: package.json package-lock.json
+	npm ci
 	touch node_modules
 
 build:
