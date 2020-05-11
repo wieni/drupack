@@ -1,0 +1,16 @@
+{
+  "namespaces": [
+    {
+      "namespace": "components",
+      "path": "resources/components"
+    },
+    {
+      "namespace": "content-blocks",
+      "path": "templates/content-blocks"
+    },
+    {
+      "namespace": "drupack",
+      "path": "templates"
+    }
+  ]
+}

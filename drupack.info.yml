@@ -16,16 +16,20 @@ libraries-override:
   core/html5shiv: false
 
 regions:
-  # This is the default region where all blocks/content are rendered.
-  content: Content
-  # Place messages and/or admin tabs here.
-  admin_tools: "Admin tools"
+    # This is the default region where all blocks/content are rendered.
+    content: Content
+    # Place messages and/or admin tabs here.
+    admin_tools: 'Admin tools'
 
 # Makes it possible to include components using {% include "@component-library-name/component/card.html.twig %}
+# TODO: Check if these are inherited from the base theme
 component-libraries:
-  drupack:
-    - templates
-  content-blocks:
-    - templates/content-blocks
-  components:
-    - resources/components
+    drupack:
+        paths:
+            - templates
+    content-blocks:
+        paths:
+            - templates/content-blocks
+    components:
+        paths:
+            - resources/components
