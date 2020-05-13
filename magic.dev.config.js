@@ -1,5 +1,3 @@
-/* webpack-dev-server config */
-
 module.exports = {
   proxyPort: 3000,
   proxyTarget: "https://test.sander.wieni.dev",
