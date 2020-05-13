@@ -116,6 +116,5 @@ dist
 .yarn/build-state.yml
 .pnp.*
 
-# Drupack config
-drupack.config.js
-drupack.dev.config.js
+# Magic config
+magic.dev.config.js
