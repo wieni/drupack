@@ -1,0 +1,7 @@
+{# @var page \Drupal\wmcustom\Entity\Presenter\Node\Page #}
+
+<h1>{{ page.label }}</h1>
+
+{% include '@content-blocks/blocks.html.twig' with {
+    contentblocks: page|content('content_blocks'),
+} only %}

@@ -1,35 +1,37 @@
 name: Drupack
 type: theme
-description: 'A theme using webpack for compiling styles and scripts, Drupack!'
+description: "A theme using webpack for compiling styles and scripts, Drupack!"
 package: Wieni
-version: 1.0
+version: 3.0
 core_version_requirement: ^8 || ^9
 base theme: bunny
 
 # Add more libraries in drupack.libraries.yml. The libraries added here are included ON ALL PAGES.
 libraries:
-    - drupack/global-styling
+  - drupack/global
 
 # Remove some of the default Drupal libraries, that include some style we don't need.
 libraries-override:
-    system/base: false
-    core/html5shiv: false
+  system/base: false
+  core/html5shiv: false
 
 regions:
-    # This is the default region where all blocks/content are rendered.
-    content: Content
-    # Place messages and/or admin tabs here.
-    admin_tools: 'Admin tools'
+  # This is the default region where all blocks/content are rendered.
+  content: Content
+  # Place messages and/or admin tabs here.
+  admin_tools: "Admin tools"
 
 # Makes it possible to include components using {% include "@component-library-name/component/card.html.twig %}
 # TODO: Check if these are inherited from the base theme
 component-libraries:
-    drupack:
-        paths:
-            - templates
-    content-blocks:
-        paths:
-            - templates/content-blocks
-    components:
-        paths:
-            - resources/components
+  drupack:
+    paths:
+      - templates
+  content-blocks:
+    paths:
+      - templates/content-blocks
+  components:
+    paths:
+      - resources/components
+
+gtm: GTM-XXXXXXXX
