@@ -3,7 +3,7 @@ type: theme
 description: 'A theme using webpack for compiling styles and scripts, Drupack!'
 package: Wieni
 version: 1.0
-core: 8.x
+core_version_requirement: ^8 || ^9
 base theme: bunny
 
 # Add more libraries in drupack.libraries.yml. The libraries added here are included ON ALL PAGES.
