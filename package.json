@@ -5,17 +5,19 @@
   "main": "index.js",
   "author": "Wieni",
   "license": "MIT",
+  "private": true,
   "scripts": {
-    "build": "magic build",
-    "start": "magic start"
+    "build": "NODE_ENV=production magic build",
+    "start": "NODE_ENV=development magic start",
+    "lint": "stylelint '**/*.scss' --fix "
   },
   "devDependencies": {
-    "react-hot-loader": "^4.12.20",
-    "stylelint": "^13.3.3",
+    "magic": "github:wieni/magic#0.1.1",
+    "stylelint": "^13.6.1",
     "stylelint-config-drupack": "github:wieni/stylelint-config-drupack"
   },
   "dependencies": {
-    "@popperjs/core": "^2.1.1",
+    "@popperjs/core": "^2.4.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }

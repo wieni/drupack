@@ -4,7 +4,7 @@ assets:=$(shell find resources -type f)
 .PHONY: clean build
 
 ifneq ($(APP_ENV), local)
-	ALL_TARGETS += build
+    ALL_TARGETS += build
 endif
 
 all: $(ALL_TARGETS)

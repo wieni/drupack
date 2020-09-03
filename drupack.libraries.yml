@@ -6,11 +6,15 @@ global:
   js:
     public/resources/global.js: { preprocess: false }
   dependencies:
+    - core/drupalSettings
     - drupack/runtime
     - drupack/vendors
 
 vendors:
   version: VERSION
+  css:
+    base:
+      public/resources/vendors.css: { preprocess: false }
   js:
     public/resources/vendors.js: { preprocess: false }
   dependencies:
