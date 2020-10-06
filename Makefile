@@ -9,13 +9,13 @@ endif
 
 all: $(ALL_TARGETS)
 
-public/resources: package.json package-lock.json $(assets)
+public/resources: package.json package-lock.json .nvmrc $(assets)
 	$(MAKE) node_modules
 	npm run build
 	@rm -rf node_modules
 	touch public/resources
 
-node_modules: package.json package-lock.json
+node_modules: package.json package-lock.json .nvmrc
 	npm ci
 	touch node_modules
 
