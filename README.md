@@ -24,7 +24,6 @@ should be added to the project this theme is created in.
 
 ```bash
 git clone https://github.com/wieni/drupack.git public/themes/custom/drupack
-composer require wieni/bunny
 ```
 
 ## Security
