@@ -8,17 +8,34 @@
   "private": true,
   "scripts": {
     "build": "NODE_ENV=production magic build",
-    "start": "NODE_ENV=development magic start",
-    "lint": "stylelint '**/*.scss' --fix "
-  },
-  "devDependencies": {
-    "magic": "github:wieni/magic#0.1.1",
-    "stylelint": "^13.6.1",
-    "stylelint-config-drupack": "github:wieni/stylelint-config-drupack"
+    "start": "NODE_ENV=development magic start"
   },
   "dependencies": {
-    "@popperjs/core": "^2.4.4",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.9",
+    "@types/react-dom": "^17.0.6",
+    "@wieni/magic": "^1.0.8",
+    "@wieni/prettier-config": "^1.0.0",
+    "prettier": "^2.3.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "prettier": "@wieni/prettier-config",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not IE 11",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

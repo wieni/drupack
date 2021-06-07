@@ -16,7 +16,7 @@ public/resources: package.json package-lock.json .nvmrc $(assets)
 	touch public/resources
 
 node_modules: package.json package-lock.json .nvmrc
-	npm ci
+	npm ci --no-optional
 	touch node_modules
 
 build:

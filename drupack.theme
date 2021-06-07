@@ -1,0 +1,67 @@
+<?php
+
+/**
+ * This is where — magic — happens.
+ */
+function drupack_library_info_alter(&$libraries, $extension)
+{
+    if (WM_FRONT) {
+        unset($libraries['drupalSettings']['js']);
+    }
+
+    if ($extension == 'drupack') {
+        $theme_path = drupal_get_path('theme', $extension);
+        $resouces_dir = '/public/resources';
+        $manifest_path = $theme_path . $resouces_dir . '/asset-manifest.json';
+        $manifest_file = file_get_contents($manifest_path);
+
+        if ($manifest_file) {
+            $manifest = json_decode($manifest_file, true);
+
+            foreach ($manifest['entrypoints'] as $entrypoints => $entrypoint) {
+                foreach ($entrypoint as $entry => $files) {
+                    $libraries[$entry]['version'] = 'VERSION';
+
+                    foreach ($files  as $file) {
+                        $pathinfo = pathinfo($file);
+
+                        switch ($pathinfo['extension']) {
+                            case 'css':
+                                $libraries[$entry]['css']['theme']['public/resources/' . $file] = ['preprocess' => false, 'minified' => true];
+                                break;
+                            case 'js':
+                                $libraries[$entry]['js']['public/resources/' . $file] = ['preprocess' => false, 'minified' => true];
+                                break;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+function drupack_preprocess_html(&$variables)
+{
+    $favicon = [
+    '#tag' => 'link',
+    '#attributes' => [
+        'rel' => 'icon',
+        'type' => 'image/svg+xml',
+        'href' => '/' . drupal_get_path('theme', 'drupack') . '/logo.svg',
+      ],
+    ];
+
+    $variables['page']['#attached']['html_head'][] = [$favicon, 'x-ua-compatible'];
+}
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function drupack_page_attachments_alter(array &$attachments)
+{
+    foreach ($attachments['#attached']['html_head'] as $key => $attachment) {
+        if ($attachment[1] == 'system_meta_generator') {
+            unset($attachments['#attached']['html_head'][$key]);
+        }
+    }
+}

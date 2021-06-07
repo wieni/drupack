@@ -1,0 +1,9 @@
+{# @var block \Drupal\wmcustom\Entity\ContentBlock\ContentBlock #}
+
+{%- for block in contentBlocks -%}
+  {% include [
+    '@content-blocks/' ~ (block.bundle()|clean_class) ~ '.html.twig'
+  ] with {
+    block: block|p
+  } only %}
+{%- endfor -%}

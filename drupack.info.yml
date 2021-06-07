@@ -1,10 +1,11 @@
 name: Drupack
 type: theme
-description: "A theme using webpack for compiling styles and scripts, Drupack!"
+description: 'a drupal theme made by Wieni using magic powers'
 package: Wieni
 version: 3.0
 core_version_requirement: ^8 || ^9
 base theme: false
+screenshot: screenshot.gif
 
 # Add more libraries in drupack.libraries.yml. The libraries added here are included ON ALL PAGES.
 libraries:
@@ -19,7 +20,7 @@ regions:
   # This is the default region where all blocks/content are rendered.
   content: Content
   # Place messages and/or admin tabs here.
-  admin_tools: "Admin tools"
+  admin_tools: 'Admin tools'
 
 # Makes it possible to include components using {% include "@component-library-name/component/card.html.twig %}
 # @see https://www.drupal.org/project/components
@@ -28,5 +29,3 @@ components:
     drupack: templates
     content-blocks: templates/content-blocks
     components: resources/components
-
-gtm: GTM-XXXXXXXX
