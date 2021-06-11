@@ -4,7 +4,7 @@
  * Implements @see hook_library_info_alter().
  * This is where — magic — happens.
  */
-function drupack_library_info_alter(array &$libraries, $extension)
+function drupack_library_info_alter(array &$libraries, string $extension): void
 {
     if ($extension !== 'drupack') {
         return;
