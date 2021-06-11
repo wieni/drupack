@@ -1,6 +1,6 @@
 name: Drupack
 type: theme
-description: 'a drupal theme made by Wieni using magic powers'
+description: 'A drupal theme made by Wieni using magic powers'
 package: Wieni
 version: 3.0
 core_version_requirement: ^8 || ^9
