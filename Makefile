@@ -9,7 +9,7 @@ endif
 
 all: $(ALL_TARGETS)
 
-public/resources: package.json package-lock.json .nvmrc $(assets)
+public/resources: package.json package-lock.json .nvmrc magic.config.js $(assets)
 	$(MAKE) node_modules
 	npm run build
 	@rm -rf node_modules
