@@ -12,8 +12,7 @@ should be added to the project this theme is created in.
 git clone https://github.com/wieni/drupack.git public/themes/custom/drupack
 ```
 
-## How does it work?
-###  Define an entry point
+## Define an entry point
 An entry point, always has a name (the name of the output file) and a corresponding (js) file in `/resources`.
 
 ```js
