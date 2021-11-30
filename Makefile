@@ -19,6 +19,10 @@ node_modules: package.json package-lock.json .nvmrc
 	npm ci --no-optional
 	touch node_modules
 
+package-lock.json:
+	npm install
+	touch package-lock.json
+
 build:
 	sed -i.bak s/VERSION/$(GIT_VERSION)/g drupack.libraries.yml
 	@rm -f drupack.libraries.yml.bak
